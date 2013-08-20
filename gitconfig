@@ -1,0 +1,9 @@
+[user]
+	name = zedwarth
+	email = zedwarth@gmail.com
+[credential]
+	helper = cache
+[color]
+	ui = true
+[achievement]
+	upload = true
