@@ -40,8 +40,26 @@ ZSH_THEME="agnoster"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git gem archlinux python)
+plugins=(colored-man gem git python)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+############################
+# OS Specific Setups
+
+if [[ $OSTYPE == "linux-gnu" ]]; then
+	typeset -U path
+	path=(~/code/git-achievements ~/.gem/ruby/2.0.0/bin $path)
+	plugins=(archlinux systemd $plugins)
+#	source /usr/share/doc/pkgfile/command-not-found.zsh
+	command ponysay -q
+elif [[ $OSTYPE == "darwin"* ]]; then
+	typeset -U path
+	path=(~/code/git-achievements $path)
+	plugins=(brew osx)
+fi
+
+#alias
+alias git="git-achievements"
+alias cat="lolcat"
