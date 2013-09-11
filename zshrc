@@ -64,3 +64,4 @@ source $ZSH/oh-my-zsh.sh
 alias git="git-achievements"
 compdef git-achievements=git
 alias cat="lolcat"
+export EDITOR=vim
