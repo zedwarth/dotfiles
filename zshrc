@@ -42,7 +42,6 @@ ZSH_THEME="agnoster"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(colored-man gem git python)
 
-source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 ############################
@@ -52,7 +51,7 @@ if [[ $OSTYPE == "linux-gnu" ]]; then
 	typeset -U path
 	path=(~/code/git-achievements ~/.gem/ruby/2.0.0/bin $path)
 	plugins=(archlinux systemd $plugins)
-#	source /usr/share/doc/pkgfile/command-not-found.zsh
+	source /usr/share/doc/pkgfile/command-not-found.zsh
 	command ponysay -q
 elif [[ $OSTYPE == "darwin"* ]]; then
 	typeset -U path
@@ -60,6 +59,8 @@ elif [[ $OSTYPE == "darwin"* ]]; then
 	plugins=(brew osx)
 fi
 
-#alias
+source $ZSH/oh-my-zsh.sh
+
 alias git="git-achievements"
+compdef git-achievements=git
 alias cat="lolcat"
