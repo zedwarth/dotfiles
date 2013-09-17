@@ -52,11 +52,10 @@ if [[ $OSTYPE == "linux-gnu" ]]; then
 	path=(~/code/git-achievements ~/.gem/ruby/2.0.0/bin $path)
 	plugins=(archlinux systemd $plugins)
 	source /usr/share/doc/pkgfile/command-not-found.zsh
-	command ponysay -q
 elif [[ $OSTYPE == "darwin"* ]]; then
 	typeset -U path
 	path=(~/code/git-achievements $path)
-	plugins=(brew osx)
+	plugins=(brew osx $plugins)
 fi
 
 source $ZSH/oh-my-zsh.sh
@@ -64,4 +63,5 @@ source $ZSH/oh-my-zsh.sh
 alias git="git-achievements"
 compdef git-achievements=git
 alias cat="lolcat"
+command ponysay -q
 export EDITOR=vim
