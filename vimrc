@@ -15,4 +15,5 @@ au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
 set background=dark
 colorscheme solarized
 
-"set modeline
+"Powerline
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
