@@ -56,6 +56,7 @@ elif [[ $OSTYPE == "darwin"* ]]; then
 	typeset -U path
 	path=(~/code/git-achievements $path)
 	plugins=(brew osx $plugins)
+	alias clang="clang-3.3"
 fi
 
 source $ZSH/oh-my-zsh.sh
