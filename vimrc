@@ -7,6 +7,7 @@ syntax on
 filetype indent plugin on
 set linebreak
 set backspace=indent,eol,start
+set spell nu
 
 "Python-File-Formating
 au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
