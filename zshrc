@@ -40,7 +40,7 @@ ZSH_THEME="agnoster"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(colored-man gem git python)
+plugins=(github heroku zsh-syntax-highlighting colored-man gem git python rails ruby bower npm)
 
 
 # Customize to your needs...
@@ -55,7 +55,7 @@ if [[ $OSTYPE == "linux-gnu" ]]; then
 elif [[ $OSTYPE == "darwin"* ]]; then
 	typeset -U path
 	path=(~/code/git-achievements $path)
-	plugins=(brew osx $plugins)
+	plugins=(brew osx sublime $plugins)
 fi
 
 source $ZSH/oh-my-zsh.sh
@@ -65,3 +65,4 @@ compdef git-achievements=git
 alias cat="lolcat"
 command ponysay -q
 export EDITOR=vim
+
