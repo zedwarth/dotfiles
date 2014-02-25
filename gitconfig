@@ -1,5 +1,5 @@
 [user]
-	name = zedwarth
+	name = Seth Szymanski
 	email = zedwarth@gmail.com
 [credential]
 	helper = cache
@@ -9,3 +9,6 @@
 	upload = true
 [core]
 	editor = vim
+	excludesfile = ~/.gitignore
+[push]
+	default = simple
