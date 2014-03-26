@@ -56,6 +56,7 @@ elif [[ $OSTYPE == "darwin"* ]]; then
 	typeset -U path
 	path=(~/code/git-achievements $path)
 	plugins=(brew osx sublime $plugins)
+	chrome() { open -a "Google Chrome" $* }
 fi
 
 source $ZSH/oh-my-zsh.sh
