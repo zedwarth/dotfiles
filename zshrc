@@ -57,11 +57,11 @@ elif [[ $OSTYPE == "darwin"* ]]; then
 	path=(~/code/git-achievements $path)
 	plugins=(brew osx sublime $plugins)
 	chrome() { open -a "Google Chrome" $* }
+	alias git="git-achievements"
 fi
 
 source $ZSH/oh-my-zsh.sh
 
-alias git="git-achievements"
 compdef git-achievements=git
 alias cat="lolcat"
 command ponysay -q
