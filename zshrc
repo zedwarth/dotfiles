@@ -58,6 +58,8 @@ elif [[ $OSTYPE == "darwin"* ]]; then
 	plugins=(brew osx sublime $plugins)
 	chrome() { open -a "Google Chrome" $* }
 	alias git="git-achievements"
+	source '/usr/local/share/chruby/chruby.sh'
+	source '/usr/local/share/chruby/auto.sh'
 fi
 
 source $ZSH/oh-my-zsh.sh
