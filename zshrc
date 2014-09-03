@@ -40,7 +40,7 @@ ZSH_THEME="agnoster"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(github heroku zsh-syntax-highlighting colored-man gem git python ruby rails bower bundler npm rake heroku)
+plugins=(colored-man gem git python ruby rails bower bundler npm rake-fast heroku)
 
 
 # Customize to your needs...
