@@ -40,7 +40,7 @@ ZSH_THEME="agnoster"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(colored-man gem git python ruby rails bower bundler npm rake-fast heroku)
+plugins=(colored-man gem bundler)
 
 
 # Customize to your needs...
@@ -49,15 +49,15 @@ plugins=(colored-man gem git python ruby rails bower bundler npm rake-fast herok
 
 if [[ $OSTYPE == "linux-gnu" ]]; then
 	typeset -U path
-	path=(~/code/git-achievements ~/.gem/ruby/2.0.0/bin $path)
+	path=(~/code/git-achievements  $path)
 	plugins=(archlinux systemd $plugins)
 	source /usr/share/doc/pkgfile/command-not-found.zsh
 elif [[ $OSTYPE == "darwin"* ]]; then
 	typeset -U path
-	path=(~/code/git-achievements $path)
 	plugins=(brew osx sublime $plugins)
 	chrome() { open -a "Google Chrome" $* }
-	alias git="git-achievements"
+	source /usr/local/opt/chruby/share/chruby/chruby.sh
+	chruby ruby
 fi
 
 source $ZSH/oh-my-zsh.sh
