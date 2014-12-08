@@ -49,7 +49,8 @@ plugins=(colored-man gem bundler)
 
 if [[ $OSTYPE == "linux-gnu" ]]; then
 	typeset -U path
-	path=(~/code/git-achievements  $path)
+	export GEM_HOME=$(ruby -e 'print Gem.user_dir')
+	path=($GEM_HOME/bin ~/.npm/bin $path)
 	plugins=(archlinux systemd $plugins)
 	source /usr/share/doc/pkgfile/command-not-found.zsh
 elif [[ $OSTYPE == "darwin"* ]]; then
