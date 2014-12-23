@@ -40,7 +40,7 @@ ZSH_THEME="agnoster"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(colored-man gem bundler)
+plugins=(colored-man gem bundler npm grunt)
 
 
 # Customize to your needs...
@@ -56,8 +56,8 @@ elif [[ $OSTYPE == "darwin"* ]]; then
 	typeset -U path
 	plugins=(brew osx sublime $plugins)
 	chrome() { open -a "Google Chrome" $* }
-	source /usr/local/opt/chruby/share/chruby/chruby.sh
-	chruby ruby
+	#source /usr/local/opt/chruby/share/chruby/chruby.sh
+	#chruby ruby
 fi
 
 source $ZSH/oh-my-zsh.sh
