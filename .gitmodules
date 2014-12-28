@@ -19,3 +19,6 @@
 [submodule "vim/bundle/vim-ruby"]
 	path = vim/bundle/vim-ruby
 	url = git@github.com:vim-ruby/vim-ruby.git
+[submodule "vim/bundle/neobundle.vim"]
+	path = vim/bundle/neobundle.vim
+	url = git@github.com:Shougo/neobundle.vim.git
