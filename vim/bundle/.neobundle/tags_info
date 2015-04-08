@@ -1,3 +1,5 @@
+editorconfig-vim
 neobundle.vim
+nyancat-vim
 rust.vim
 vim-airline

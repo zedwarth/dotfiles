@@ -22,6 +22,10 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Note: You don't set neobundle setting in .gvimrc!
 NeoBundle 'wting/rust.vim'
 NeoBundle 'bling/vim-airline'
+NeoBundle 'editorconfig/editorconfig-vim'
+NeoBundle 'koron/nyancat-vim'
+" NeoBundle 'Shougo/unite.vim'
+" NeoBundle 'Shougo/vimfiler.vim'
 
 call neobundle#end()
 
@@ -56,3 +60,4 @@ colorscheme solarized
 "Vim-Airline
 set laststatus=2
 let g:airline_powerline_fonts = 1
+let g:vimfiler_as_default_explorer = 1
