@@ -54,6 +54,7 @@ if [[ $OSTYPE == "linux-gnu" ]]; then
 	source /usr/share/doc/pkgfile/command-not-found.zsh
 elif [[ $OSTYPE == "darwin"* ]]; then
 	typeset -U path
+	export PATH=$(brew --prefix ruby)/bin:$PATH
 	plugins=(brew osx sublime $plugins)
 	chrome() { open -a "Google Chrome" $* }
 	#source /usr/local/opt/chruby/share/chruby/chruby.sh
