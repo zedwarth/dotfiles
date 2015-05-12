@@ -23,7 +23,9 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'wting/rust.vim'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'editorconfig/editorconfig-vim'
-NeoBundle 'koron/nyancat-vim'
+NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'elixir-lang/vim-elixir'
+"NeoBundle 'koron/nyancat-vim'
 " NeoBundle 'Shougo/unite.vim'
 " NeoBundle 'Shougo/vimfiler.vim'
 
@@ -56,6 +58,9 @@ autocmd FileType python setlocal ts=8 sts=4 sw=4 expandtab
 "Colors
 set background=dark
 colorscheme solarized
+
+"CTRL-P
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|dist\|coverage\|doc\|build\|bower_components'
 
 "Vim-Airline
 set laststatus=2
