@@ -1,0 +1,5 @@
+ctrlp.vim
+neobundle.vim
+rust.vim
+vim-airline
+vim-elixir
