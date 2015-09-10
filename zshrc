@@ -67,4 +67,4 @@ compdef git-achievements=git
 alias cat="lolcat"
 command ponysay -q
 export EDITOR=vim
-
+source /usr/local/opt/chruby/share/chruby/chruby.sh
