@@ -22,9 +22,10 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Note: You don't set neobundle setting in .gvimrc!
 NeoBundle 'wting/rust.vim'
 NeoBundle 'bling/vim-airline'
-NeoBundle 'editorconfig/editorconfig-vim'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'elixir-lang/vim-elixir'
+NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'pangloss/vim-javascript'
 "NeoBundle 'koron/nyancat-vim'
 " NeoBundle 'Shougo/unite.vim'
 " NeoBundle 'Shougo/vimfiler.vim'
@@ -50,7 +51,7 @@ autocmd Filetype html setlocal ts=2 sts=2 sw=2
 autocmd Filetype css setlocal ts=2 sts=2 sw=2
 autocmd Filetype slim setlocal ts=2 sts=2 sw=2
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
-autocmd Filetype javascript setlocal ts=4 sts=4 sw=4
+autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
 autocmd FileType eruby setlocal ts=2 sts=2 sw=2
 autocmd FileType python setlocal ts=8 sts=4 sw=4 expandtab
 

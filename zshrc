@@ -40,7 +40,7 @@ ZSH_THEME="agnoster"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(colored-man gem bundler)
+plugins=(colored-man gem bundler mix)
 
 
 # Customize to your needs...
@@ -68,3 +68,5 @@ alias cat="lolcat"
 command ponysay -q
 export EDITOR=vim
 
+source /usr/share/chruby/chruby.sh
+alias npm-exec='PATH=$(npm bin):$PATH'

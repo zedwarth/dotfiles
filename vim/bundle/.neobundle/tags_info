@@ -1,6 +1,6 @@
 ctrlp.vim
-editorconfig-vim
 neobundle.vim
 rust.vim
 vim-airline
 vim-elixir
+vim-javascript
