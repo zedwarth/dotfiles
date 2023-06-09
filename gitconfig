@@ -1,18 +1,8 @@
 [user]
 	name = Seth Szymanski
 	email = zedwarth@gmail.com
-[credential]
-	helper = cache
-[color]
-	ui = true
-[achievement]
-	upload = true
 [core]
-	editor = vim
-	excludesfile = ~/.gitignore
-[push]
-	default = simple
-[mergetool]
-	keepBackup = false
+	editor = nvim
+	excludesfile = ~/.gitignore_global
 [alias]
 	lg = log --graph --all --decorate
