@@ -15,6 +15,39 @@ local plugins = {
     end,
   },
   {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        -- defaults 
+        "vim",
+        "lua",
+
+        -- web dev 
+        "html",
+        "css",
+        "javascript",
+        "typescript",
+        "tsx",
+        "json",
+
+        -- elixir
+        "elixir",
+        "eex",
+        "heex",
+        "surface",
+        "erlang"
+      },
+    },
+  },
+  {
+    "elixir-tools/elixir-tools.nvim",
+    ft = {"elixir", "eelixir", "heex", "surface"},
+    dependencies = "nvim-lua/plenary.nvim",
+    config = function()
+      require("elixir").setup()
+    end
+  },
+  {
     "rust-lang/rust.vim",
     ft = "rust",
     init = function ()
